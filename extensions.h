@@ -1,9 +1,9 @@
 namespace fiene{
 #if 0
-    #define comprehension(type,expresion,statement) \
+    #define comprehension(type,expression,statement) \
     ([]{\
         vector<type> v;\
-        statement v.push_back(expresion);\
+        statement v.push_back(expression);\
         return v;\
     }())
 #endif

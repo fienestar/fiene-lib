@@ -1,4 +1,10 @@
 namespace fiene{
+    #define comprehension(type,X,statement) \
+    ([]{\
+        vector<type> v;\
+        statement v.push_back(X);\
+        return v;\
+    }())
     template <class T>
     class Chain
     {

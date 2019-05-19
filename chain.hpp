@@ -1,12 +1,4 @@
 namespace fiene{
-#if 0
-    #define comprehension(type,expression,statement) \
-    ([]{\
-        vector<type> v;\
-        statement v.push_back(expression);\
-        return v;\
-    }())
-#endif
     template <class T>
     class Chain
     {
@@ -22,7 +14,7 @@ namespace fiene{
         template <class S>\
         Chain<T> operator op(const S& rhs) const\
         {\
-            return Chain<T>(_value, _rslt && _value op rhs);\
+            return Chain<T>(rhs, _rslt && _value op rhs);\
         }\
         template <class D, class S>\
         friend Chain<D> operator op(const S& lhs, Chain<D> c);

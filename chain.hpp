@@ -1,3 +1,6 @@
+#ifndef FIENE_CHAIN_HPP
+#define FIENE_CHAIN_HPP
+
 namespace fiene{
     template <class T>
     class Chain
@@ -53,3 +56,5 @@ namespace fiene{
     
     #undef make_compare_opearator
 }
+
+#endif

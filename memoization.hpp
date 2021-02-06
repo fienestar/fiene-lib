@@ -1,5 +1,5 @@
-#ifndef FIENE_MEMORIZATION_HPP
-#define FIENE_MEMORIZATION_HPP
+#ifndef FIENE_MEMOIZATION_HPP
+#define FIENE_MEMOIZATION_HPP
 
 #include <map>
 #include <tuple>
@@ -48,7 +48,7 @@ namespace fiene {
     map memo_t<f, map>::memo_map;
 
     template <auto f>
-    auto get_memorized()
+    auto get_memoized()
     {
         return memo_t<f>();
     }
